@@ -1,9 +1,9 @@
-# Detecting Road Conditions Using Smartphone Sensors#
+## Detecting Road Conditions Using Smartphone Sensors##
 
-##Problem Statement##
+###Problem Statement###
 Design and Develop a technique for detecting road anomalies using smartphone sensors where road anomalies include bump, pothole,brake and rough road.
 
-##Steps Involved##
+###Steps Involved###
 1. Data Collection
  1. We'll be developing our own app for collecting the data (will be complete within 10 days i.e. till 27th January,2015). 
  2. The data collected from the app will be processed using some filters like the Butterworth low-pass filter for expanding the number of features and compacting the number of samples for the reading window corresponding to one classification.
@@ -18,11 +18,11 @@ Design and Develop a technique for detecting road anomalies using smartphone sen
  1. Each technique applied above will be evaluated against cross-validation data sets and test data sets which are too collected by the app in Step 1.1
  2. The best ML technique chosen from the above evaluation will be applied to learn the classification of potholes, bumps, etc and can be used further for prediction purposes.
 
-##Scope##
+###Scope###
 1. A specific app will be developed for collecting the data which involves active participation of the smartphone user to classify manually whether the smartphone just went through a bump, pothole, braking, etc events. Hence, the data collection part is not crowd-sourced as of now(in the sense that it doesn't collect data in the background, but involves active participation of the user).
-2. As a final result, the machine learning system would be able to classify new readings from the smartphones. But still, it is uncertain that we will be able to make a final app with real-time classification and color-coding on the maps. But what we will be able to complete is that *collect a new reading using a seperate data collecting app*(which will support crowdsourcing and run in the background with no active participation of the user(i.e. no manual interaction for collection; the app will collect data silently) ), *the reading will be transferred to a computer* (may be through background uploading on our server), *where some pre-processing(1.2) and data cleaning(2) will be done* and *will predict what it is(a pothole, or something else) using the parameters(or weights) initially determined by the ML system on the training data set*.
-3. The server can then in future color, code that region(identfied by lat and long) on the map accordingly(based on the reading shown by maximum users on that particular spot on map) which would be available to all users to see.
+2. As the final result, the machine learning system would be able to classify new readings from the smartphones. But still, it is uncertain that we will be able to make a final app with real-time classification and color-coding on the maps. But what we will be able to complete is that *collect a new reading using a _seperate_ data collecting app*(which will support crowdsourcing and run in the background with no active participation of the user(i.e. no manual interaction for collection; the app will collect data silently) ), *the reading will be transferred to a computer* (may be through background uploading on our server), *where some pre-processing(1.2) and data cleaning(2) will be done* and *will predict what it is(a pothole, or something else) using the parameters(or weights) initially determined by the ML system on the training data set*.
+3. The server can then in future, color code that region(identfied by lat and long) on the map accordingly(based on the reading shown by maximum users on that particular spot on map) which would be available to all users to see.
 
 Contents of mail apart from this: 
 1. This project can be followed on [RoadConditionDetector repo](https://github.com/qubit93/RoadConditionDetector.git).
-2. 
+2. We have already started making the app for data collection and Raman will provide it to you by 27th January and will walk you through the data collection procedure and in general,using the app to collect data.
