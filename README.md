@@ -1,7 +1,7 @@
 ## Detecting Road Conditions Using Smartphone Sensors##
 
 ###Problem Statement###
-Design and Develop a technique for detecting road anomalies using smartphone sensors where road anomalies include bump, pothole,brake and rough road.
+Design and Develop a technique for detecting road anomalies using smartphone sensors where road anomalies include bumps, potholes,brake and rough road.
 
 ###Steps Involved###
 1. Data Collection
@@ -23,6 +23,7 @@ Design and Develop a technique for detecting road anomalies using smartphone sen
 2. As the final result, the machine learning system would be able to classify new readings from the smartphones. But still, it is uncertain that we will be able to make a final app with real-time classification and color-coding on the maps. But what we will be able to complete is that *collect a new reading using a _seperate_ data collecting app*(which will support crowdsourcing and run in the background with no active participation of the user(i.e. no manual interaction for collection; the app will collect data silently) ), *the reading will be transferred to a computer* (may be through background uploading on our server), *where some pre-processing(1.2) and data cleaning(2) will be done* and *will predict what it is(a pothole, or something else) using the parameters(or weights) initially determined by the ML system on the training data set*.
 3. The server can then in future, color code that region(identfied by lat and long) on the map accordingly(based on the reading shown by maximum users on that particular spot on map) which would be available to all users to see.
 
-Contents of mail apart from this: 
+Contents of mail apart from this:
+
 1. This project can be followed on [RoadConditionDetector repo](https://github.com/qubit93/RoadConditionDetector.git).
 2. We have already started making the app for data collection and Raman will provide it to you by 27th January and will walk you through the data collection procedure and in general,using the app to collect data.
